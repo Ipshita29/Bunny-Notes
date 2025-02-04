@@ -1,10 +1,20 @@
-# Timer-project
-📌 Timer Project
-📝 Description
-A simple timer built using JavaScript, HTML, and CSS. This timer allows users to start, pause, and reset the countdown.
+# Daily planner coz plannng is a must.
+🐰 Bunny Notes – A Cute Daily Planner 🎀
+Welcome to Bunny Notes – a soft, cozy, and aesthetic planner to keep your days organized in the cutest way! 💖
 
-🎯 Features
-✔ Start, pause, and reset functionality
-✔ Custom time input
-✔ Responsive design
-✔ Sound alert when time is up (if applicable)
+🎀 Features
+✅ Add & check off tasks ✏️✔
+✅ Tasks are saved automatically in localStorage 📌
+✅ Pastel theme switcher (Pink, Lavender, Sage Green) 🎨
+✅ Daily Affirmation Quotes for soft girl vibes ✨
+✅ Minimalist & cute UI with soft rounded edges 🎀
+
+🎨 Theme Options
+💖 Blush Pink – Soft & dreamy ✨
+💜 Lavender Haze – Calming & elegant 🎀
+🌿 Sage Green – Cozy & earthy 🌿
+
+🐰 Stay Organized with Bunny Notes! 🎀
+💖 Made with love by Ipshita Patel. 💖
+
+
