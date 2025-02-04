@@ -1,5 +1,5 @@
-# Daily planner coz plannng is a must.
-🐰 Bunny Notes – A Cute Daily Planner 🎀
+# Bunny Notes
+🐰 Bunny Notes – A Daily Planner 🎀
 Welcome to Bunny Notes – a soft, cozy, and aesthetic planner to keep your days organized in the cutest way! 💖
 
 🎀 Features
