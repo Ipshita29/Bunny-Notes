@@ -1,0 +1,66 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    background-color: #ffe4e1;
+    padding: 50px;
+}
+
+h1 {
+    color: #ff69b4;
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+.theme-container {
+    margin-top: 20px;
+}
+
+.theme-button {
+    display: block;
+    width: 220px;
+    padding: 15px;
+    margin: 10px auto;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.theme-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pink-blush {
+    background-color: #ffb6c1;
+}
+
+.lavender-haze {
+    background-color: #dda0dd;
+}
+
+.sage-green {
+    background-color: #a8bfa0;
+}
+
+.cute-section {
+    margin-top: 30px;
+    padding: 10px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+    font-style: italic;
+    color: #ff69b4;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
