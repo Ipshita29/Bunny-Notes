@@ -72,6 +72,23 @@
         input[type="checkbox"]:checked + textarea {
             background-color: #c8e6c9; /* Light sage green when checked */
         }
+        .sage-green-button {
+            background-color: #9caf88; /* Soft sage green */
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .sage-green-button:hover {
+            background-color: #819b6d; /* Deeper sage green */
+            transform: scale(1.05);
+        }
+
     </style>
 </head>
 <body>
@@ -103,5 +120,8 @@
             Every great journey begins with a single step.
         </p>
     </div1>
+    <a href="index.html">
+        <button class="sage-green-button">Go to Home </button>
+    </a>
 </body>
 </html>
