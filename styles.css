@@ -59,29 +59,27 @@ p {
 }
 /* Greeting Styling */
 #greeting {
-    font-size: 1.5rem;
+    font-size: 12px;
     font-weight: bold;
+    padding: 10px 10px;
     color: #ff69b4; /* Soft pink */
-    padding: 12px 20px;
     border-radius: 12px;
     background: linear-gradient(135deg, #ffb6c1, #ff69b4);
     color: white;
-    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
     display: inline-block;
     animation: fadeIn 1s ease-in-out;
 }
 
 /* Affirmation Styling */
 #affirmation {
-    font-size: 1.3rem;
+    font-size: 12px;
     font-weight: bold;
+    padding: 10px 10px;
     color: #6a5acd; /* Soft lavender */
     margin-top: 15px;
-    padding: 12px 20px;
     border-radius: 12px;
     background: linear-gradient(135deg, #e6e6fa, #d8bfd8);
     color: #4b0082; /* Deep purple */
-    box-shadow: 0 4px 12px rgba(106, 90, 205, 0.3);
     display: inline-block;
     max-width: 80%;
     animation: fadeIn 1s ease-in-out, glow 2s infinite alternate;
