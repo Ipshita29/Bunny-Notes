@@ -17,4 +17,8 @@ Welcome to Bunny Notes – a soft, cozy, and aesthetic planner to keep your days
 🐰 Stay Organized with Bunny Notes! 🎀
 💖 Made with love by Ipshita Patel. 💖
 
+🎯 Tasks to be Made!
+🎨 1. Dark Mode Toggle.
+🕐 2. Timer/Pomodoro: A built-in focus timer.
+📝 3. Sticky Notes Section: Let users add quick notes.
 
