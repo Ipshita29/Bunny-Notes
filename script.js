@@ -42,3 +42,30 @@ document.addEventListener("DOMContentLoaded", function () {
         affirmationElement.innerText = affirmations[Math.floor(Math.random() * affirmations.length)];
     }
 });
+
+
+// to store tasks so they dont disappear when we reload the page 
+document.addEventListener("DOMContentLoaded", function () {
+    const tasks = document.querySelectorAll("textarea");
+    const checkboxes = document.querySelectorAll("input[type='checkbox']");
+
+    // Load saved tasks
+    tasks.forEach((task, index) => {
+        task.value = localStorage.getItem(`task${index}`) || "";
+        checkboxes[index].checked = localStorage.getItem(`check${index}`) === "true";
+    });
+
+    // Save tasks on input
+    tasks.forEach((task, index) => {
+        task.addEventListener("input", () => {
+            localStorage.setItem(`task${index}`, task.value);
+        });
+    });
+
+    checkboxes.forEach((checkbox, index) => {
+        checkbox.addEventListener("change", () => {
+            localStorage.setItem(`check${index}`, checkbox.checked);
+        });
+    });
+});
+
