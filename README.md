@@ -22,3 +22,12 @@ Welcome to Bunny Notes – a soft, cozy, and aesthetic planner to keep your days
 🕐 2. Timer/Pomodoro: A built-in focus timer.
 📝 3. Sticky Notes Section: Let users add quick notes.
 
+🚀 Installation & Usage
+1️⃣ Clone the repository
+            "git clone https://github.com/yourusername/bunny-notes.git"
+2️⃣ Open index.html in your browser and start planning!
+
+
+Want to contribute? Feel free to fork the repo and submit a PR! 🌸
+
+
