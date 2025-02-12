@@ -1,332 +1,61 @@
-/* Home Page Styling */
-body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    text-align: center;
-    background-color: #ffe4e1;
-    padding: 50px;
-}
-h1 {
-    color: #ff69b4;
-    font-size: 36px;
+/* General Theme Variables */
+:root {
+    --bg-color: #fce4ec;
+    --text-color: #333;
+    --heading-color: #f48fb1;
+    --button-bg: #ffb6c1;
+    --button-hover: #ff8fab;
 }
 
-p {
-    font-size: 18px;
-    color: #555;
-}
-
-.theme-container {
-    margin-top: 20px;
-}
-.theme-button {
-    display: block;
-    width: 220px;
-    padding: 15px;
-    margin: 10px auto;
-    font-size: 20px;
-    border-radius: 10px;
-    text-align: center;
-    text-decoration: none; /* Remove underline */
-    color: white;
-    font-weight: bold;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-.theme-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+/* Theme Colors */
 .pink-blush {
-    background-color: #ffb6c1;
+    --bg-color: #fce4ec;
+    --heading-color: #f48fb1;
+    --button-bg: #ffb6c1;
+    --button-hover: #ff8fab;
 }
-.lavender-haze {
-    background-color: #dda0dd;
-}
+
 .sage-green {
-    background-color: #a8bfa0;
+    --bg-color: #e8f5e9;
+    --heading-color: #66bb6a;
+    --button-bg: #9caf88;
+    --button-hover: #819b6d;
 }
-.quote {
-    font-style: italic;
-    color: #ff69b4;
-    font-size: 15px;
-    margin-bottom: 10px;
+
+.lavender-haze {
+    --bg-color: #f3e5f5;
+    --heading-color: #ba68c8;
+    --button-bg: #c3b1e1;
+    --button-hover: #a893d5;
 }
-/* Greeting Styling */
-#greeting {
-    font-size: 12px;
-    font-weight: bold;
-    padding: 10px 10px;
-    color: #ff69b4; /* Soft pink */
-    border-radius: 12px;
-    background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    text-align: center;
+    color: var(--text-color);
+    transition: background-color 0.3s ease-in-out;
+}
+
+h1 {
+    color: var(--heading-color);
+    font-size: 2.5em;
+}
+
+.theme-button {
+    background-color: var(--button-bg);
     color: white;
-    display: inline-block;
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Affirmation Styling */
-#affirmation {
-    font-size: 12px;
-    font-weight: bold;
-    padding: 10px 10px;
-    color: #6a5acd; /* Soft lavender */
-    margin-top: 15px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #e6e6fa, #d8bfd8);
-    color: #4b0082; /* Deep purple */
-    display: inline-block;
-    max-width: 80%;
-    animation: fadeIn 1s ease-in-out, glow 2s infinite alternate;
-}
-/* Green theme Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e8f5e9; /* Soft sage green background */
-    margin: 0;
-    padding: 20px;
-    color: #333;
-}
-
-h1 {
-    text-align: center;
-    color: #66bb6a; /* Sage green */
-    font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
-    margin-bottom: 5px;
-    letter-spacing: 2px;
-}
-
-h4 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #388e3c; /* Medium sage green */
-    margin-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600; /* Bold for emphasis */
-}
-
-h2 {
-    text-align: center;
-    color: #2c6e49; /* Dark sage green */
-    margin-bottom: 10px;
-}
-
-div {
-    margin: 10px 0;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-div:hover {
-    background-color: #c8e6c9; /* Light sage green hover effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-textarea {
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #66bb6a; /* Soft sage green border */
-    border-radius: 8px;
-    margin-top: 10px;
-    background-color: #e8f5e9; /* Light sage green background */
-    resize: vertical;
-    font-size: 1rem;
-}
-
-input[type="checkbox"] {
-    margin-right: 10px;
-    vertical-align: middle;
-    accent-color: #388e3c; /* Green accent for checkboxes */
-}
-
-input[type="checkbox"]:checked + textarea {
-    background-color: #c8e6c9; /* Light sage green when checked */
-}
-.sage-green-button {
-    background-color: #9caf88; /* Soft sage green */
-    color: #fff;
     border: none;
     padding: 12px 24px;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.sage-green-button:hover {
-    background-color: #819b6d; /* Deeper sage green */
+.theme-button:hover {
+    background-color: var(--button-hover);
     transform: scale(1.05);
 }
-
-/* Pink theme Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fce4ec; /* Blush pink background */
-    margin: 0;
-    padding: 20px;
-    color: #333;
-}
-
-h1 {
-    text-align: center;
-    color: #f48fb1; /* Soft pink */
-    font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
-    margin-bottom: 5px;
-    letter-spacing: 2px;
-}
-
-h4 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #f06292; /* Medium pink */
-    margin-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600; /* Making it bold for emphasis */
-}
-
-h2 {
-    text-align: center;
-    color: #d81b60; /* Deep pink */
-    margin-bottom: 10px;
-}
-
-div {
-    margin: 10px 0;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-div:hover {
-    background-color: #f8bbd0; /* Light pink hover effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-textarea {
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #f48fb1; /* Soft pink border */
-    border-radius: 8px;
-    margin-top: 10px;
-    background-color: #fce4ec; /* Blush pink background */
-    resize: vertical;
-    font-size: 1rem;
-}
-
-input[type="checkbox"] {
-    margin-right: 10px;
-    vertical-align: middle;
-    accent-color: #f06292; /* Pink accent for checkboxes */
-}
-
-input[type="checkbox"]:checked + textarea {
-    background-color: #f8bbd0; /* Light pink when checked */
-}
-.pink-blush-button{
-    background-color: #ffb6c1; /* Soft pink */
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.pink-blush-button:hover {
-    background-color: #ff8fab;
-    transform: scale(1.05);
-}
-
-/* Lavender theme Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f3e5f5; /* Soft lavender haze background */
-    margin: 0;
-    padding: 20px;
-    color: #333;
-}
-
-h1 {
-    text-align: center;
-    color: #ba68c8; /* Soft lavender */
-    font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
-    margin-bottom: 5px;
-    letter-spacing: 2px;
-}
-
-h4 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #9c27b0; /* Medium lavender */
-    margin-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600; /* Bold for emphasis */
-}
-
-h2 {
-    text-align: center;
-    color: #ba68c8; /* Lighter lavender */
-    margin-bottom: 10px;
-}
-
-div {
-    margin: 10px 0;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-div:hover {
-    background-color: #e1bee7; /* Light lavender hover effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-textarea {
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #ab47bc; /* Soft lavender border */
-    border-radius: 8px;
-    margin-top: 10px;
-    background-color: #f3e5f5; /* Light lavender background */
-    resize: vertical;
-    font-size: 1rem;
-}
-
-input[type="checkbox"] {
-    margin-right: 10px;
-    vertical-align: middle;
-    accent-color: #9c27b0; /* Lavender accent for checkboxes */
-}
-
-input[type="checkbox"]:checked + textarea {
-    background-color: #e1bee7; /* Light lavender when checked */
-}
-.lavender-haze-button {
-    background-color: #c3b1e1; /* Soft lavender */
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0px 4px 10px rgba(195, 177, 225, 0.4);
-}
-
-.lavender-haze-button:hover {
-    background-color: #a893d5; /* Slightly deeper lavender */
-    transform: translateY(-2px);
-    box-shadow: 0px 6px 12px rgba(195, 177, 225, 0.6);
-}
-
