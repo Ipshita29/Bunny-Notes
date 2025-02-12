@@ -1,5 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Greeting message
+    const body = document.body;
+    const themeButtons = document.querySelectorAll(".theme-button");
+    
+    // Load stored theme
+    const savedTheme = localStorage.getItem("selectedTheme");
+    if (savedTheme) {
+        body.className = savedTheme;
+    }
+
+    // Theme Switching
+    themeButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const newTheme = this.dataset.theme;
+            body.className = newTheme;
+            localStorage.setItem("selectedTheme", newTheme);
+        });
+    });
+
+    // Dynamic Greeting
     const greetingElement = document.getElementById("greeting");
     if (greetingElement) {
         const hours = new Date().getHours();
@@ -9,63 +27,29 @@ document.addEventListener("DOMContentLoaded", function () {
         greetingElement.innerText = greetingText;
     }
 
-    // Affirmation message
+    // Affirmations
     const affirmationElement = document.getElementById("affirmation");
     if (affirmationElement) {
         const affirmations = [
             "You are capable of amazing things! 💖",
-            "Trust the timing of your life ⏳✨",
-            "Small steps lead to big changes 🚀",
-            "You are enough, just as you are 💕",
             "Believe in yourself and all that you are 🌟",
-            "Your dreams are valid, and you can achieve them 💭✨",
-            "You are stronger than you think 💪💖",
-            "Happiness is a journey, not a destination 🛤️😊",
-            "Your kindness makes the world a better place 💕🌍",
-            "You have the power to create change 🔥💫",
-            "You are worthy of love and joy ❤️✨",
-            "Embrace the magic of new beginnings 🌱💖",
-            "Your potential is limitless 🚀🌟",
-            "One step at a time, you are moving forward 🏃‍♀️💡",
-            "The best is yet to come, keep going! 🌈🌞",
-            "You inspire others just by being yourself 🌟💖",
-            "You deserve all the good things coming your way 🎁💛",
-            "Shine bright, because the world needs your light ✨💫",
-            "Everything you need is already within you 🌿💖",
-            "Progress, not perfection – keep growing 🌱📈",
             "Your hard work will pay off, keep pushing 💼💪",
-            "You are brave, strong, and resilient 🦋💜",
-            "You bring positivity wherever you go ☀️💖",
-            "You are learning and evolving every day 🌸📖",
-            "Your presence is a gift to the world 🎁🌍"
+            "The best is yet to come, keep going! 🌈🌞"
         ];
         affirmationElement.innerText = affirmations[Math.floor(Math.random() * affirmations.length)];
     }
-});
 
-
-// to store tasks so they dont disappear when we reload the page 
-document.addEventListener("DOMContentLoaded", function () {
+    // Task Persistence
     const tasks = document.querySelectorAll("textarea");
     const checkboxes = document.querySelectorAll("input[type='checkbox']");
-
-    // Load saved tasks
+    
     tasks.forEach((task, index) => {
         task.value = localStorage.getItem(`task${index}`) || "";
-        checkboxes[index].checked = localStorage.getItem(`check${index}`) === "true";
-    });
-
-    // Save tasks on input
-    tasks.forEach((task, index) => {
-        task.addEventListener("input", () => {
-            localStorage.setItem(`task${index}`, task.value);
-        });
+        task.addEventListener("input", () => localStorage.setItem(`task${index}`, task.value));
     });
 
     checkboxes.forEach((checkbox, index) => {
-        checkbox.addEventListener("change", () => {
-            localStorage.setItem(`check${index}`, checkbox.checked);
-        });
+        checkbox.checked = localStorage.getItem(`check${index}`) === "true";
+        checkbox.addEventListener("change", () => localStorage.setItem(`check${index}`, checkbox.checked));
     });
 });
-
