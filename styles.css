@@ -44,18 +44,20 @@ h1 {
 }
 
 .theme-button {
+    display:block;
     background-color: var(--button-bg);
     color: white;
-    border: none;
-    padding: 12px 24px;
+    padding: 12px 12px;
     border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    margin-bottom: 10px;
 }
 
 .theme-button:hover {
     background-color: var(--button-hover);
     transform: scale(1.05);
 }
+
