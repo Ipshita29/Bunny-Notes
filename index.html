@@ -3,20 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bunny Notes - Home</title>
+    <title>Daily Planner</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
-<body class="homepage">
-    <h1>Welcome to Bunny Notes 🐰✨</h1>
-    <p id="greeting"></p>  
-    <p id="affirmation"></p> 
+<body class="lavender-theme">  <!-- Default Theme -->
 
-    <p>Choose a theme to start planning your day:</p>
-    <div class="theme-container">
-        <a href="pink.html" class="theme-button pink-blush">Pink Blush 🌸</a>
-        <a href="lavender.html" class="theme-button lavender-haze">Lavender Haze 💜</a>
-        <a href="green.html" class="theme-button sage-green">Sage Green 🍃</a>
+    <h1>🌿 Daily Planner</h1>
+    <h4>Plan your day and stay organized!</h4>
+
+    <!-- Task List -->
+    <div class="task-container">
+        <div class="task">
+            <input type="checkbox">
+            <textarea placeholder="Write your task here..."></textarea>
+        </div>
+        <div class="task">
+            <input type="checkbox">
+            <textarea placeholder="Write your task here..."></textarea>
+        </div>
+        <div class="task">
+            <input type="checkbox">
+            <textarea placeholder="Write your task here..."></textarea>
+        </div>
     </div>
+
+    <button id="resetTasks">Reset Tasks</button>
+
+    <p class="quote">“A goal without a plan is just a wish.” — Antoine de Saint-Exupéry</p>
+
+    <!-- Theme Switcher Buttons -->
+    <div class="theme-container">
+        <button class="theme-button lavender-haze" data-theme="lavender">Lavender Haze 💜</button>
+        <button class="theme-button pink-blush" data-theme="pink">Pink Blush 🌸</button>
+        <button class="theme-button sage-green" data-theme="green">Sage Green 🍃</button>
+    </div>
+
 </body>
 </html>

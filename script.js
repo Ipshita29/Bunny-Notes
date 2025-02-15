@@ -1,55 +1,34 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const body = document.body;
-    const themeButtons = document.querySelectorAll(".theme-button");
-    
-    // Load stored theme
-    const savedTheme = localStorage.getItem("selectedTheme");
-    if (savedTheme) {
-        body.className = savedTheme;
-    }
+document.addEventListener("DOMContentLoaded", () => {
+    // Theme switching
+    document.querySelectorAll(".theme-button").forEach(button => {
+        button.addEventListener("click", function() {
+            let theme = this.getAttribute("data-theme");
 
-    // Theme Switching
-    themeButtons.forEach(button => {
-        button.addEventListener("click", function () {
-            const newTheme = this.dataset.theme;
-            body.className = newTheme;
-            localStorage.setItem("selectedTheme", newTheme);
+            // Remove previous themes
+            document.body.classList.remove("pink-theme", "lavender-theme", "green-theme");
+
+            // Apply new theme
+            document.body.classList.add(`${theme}-theme`);
+
+            // Save to localStorage to persist theme
+            localStorage.setItem("selectedTheme", theme);
         });
     });
 
-    // Dynamic Greeting
-    const greetingElement = document.getElementById("greeting");
-    if (greetingElement) {
-        const hours = new Date().getHours();
-        let greetingText = "Good Morning! ☀️";
-        if (hours >= 12 && hours < 18) greetingText = "Good Afternoon! 🌤️";
-        else if (hours >= 18) greetingText = "Good Evening! 🌙";
-        greetingElement.innerText = greetingText;
+    // Load saved theme on page load
+    let savedTheme = localStorage.getItem("selectedTheme");
+    if (savedTheme) {
+        document.body.classList.add(`${savedTheme}-theme`);
     }
 
-    // Affirmations
-    const affirmationElement = document.getElementById("affirmation");
-    if (affirmationElement) {
-        const affirmations = [
-            "You are capable of amazing things! 💖",
-            "Believe in yourself and all that you are 🌟",
-            "Your hard work will pay off, keep pushing 💼💪",
-            "The best is yet to come, keep going! 🌈🌞"
-        ];
-        affirmationElement.innerText = affirmations[Math.floor(Math.random() * affirmations.length)];
-    }
+    // Reset Tasks Button
+    document.getElementById("resetTasks").addEventListener("click", () => {
+        document.querySelectorAll(".task textarea").forEach(textarea => {
+            textarea.value = ""; // Clear task text
+        });
 
-    // Task Persistence
-    const tasks = document.querySelectorAll("textarea");
-    const checkboxes = document.querySelectorAll("input[type='checkbox']");
-    
-    tasks.forEach((task, index) => {
-        task.value = localStorage.getItem(`task${index}`) || "";
-        task.addEventListener("input", () => localStorage.setItem(`task${index}`, task.value));
-    });
-
-    checkboxes.forEach((checkbox, index) => {
-        checkbox.checked = localStorage.getItem(`check${index}`) === "true";
-        checkbox.addEventListener("change", () => localStorage.setItem(`check${index}`, checkbox.checked));
+        document.querySelectorAll(".task input[type='checkbox']").forEach(checkbox => {
+            checkbox.checked = false; // Uncheck all tasks
+        });
     });
 });

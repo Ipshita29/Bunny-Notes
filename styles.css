@@ -1,63 +1,82 @@
-/* General Theme Variables */
-:root {
-    --bg-color: #fce4ec;
-    --text-color: #333;
-    --heading-color: #f48fb1;
-    --button-bg: #ffb6c1;
-    --button-hover: #ff8fab;
-}
-
-/* Theme Colors */
-.pink-blush {
-    --bg-color: #fce4ec;
-    --heading-color: #f48fb1;
-    --button-bg: #ffb6c1;
-    --button-hover: #ff8fab;
-}
-
-.sage-green {
-    --bg-color: #e8f5e9;
-    --heading-color: #66bb6a;
-    --button-bg: #9caf88;
-    --button-hover: #819b6d;
-}
-
-.lavender-haze {
-    --bg-color: #f3e5f5;
-    --heading-color: #ba68c8;
-    --button-bg: #c3b1e1;
-    --button-hover: #a893d5;
-}
-
-/* General Styling */
+/* Smooth transition for theme changes */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--bg-color);
+    font-family: Arial, sans-serif;
     text-align: center;
-    color: var(--text-color);
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-h1 {
-    color: var(--heading-color);
-    font-size: 2.5em;
+/* Default Theme - Lavender Haze */
+.lavender-theme {
+    background-color: #e6e6fa;
+    color: #4b0082;
+}
+
+/* Pink Blush Theme */
+.pink-theme {
+    background-color: #ffdde1;
+    color: #a83279;
+}
+
+/* Sage Green Theme */
+.green-theme {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Task Styling */
+.task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.task textarea {
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding: 5px;
+    resize: none;
+    font-size: 14px;
+}
+
+/* Buttons */
+.theme-container {
+    margin-top: 20px;
 }
 
 .theme-button {
-    display:block;
-    background-color: var(--button-bg);
-    color: white;
-    padding: 12px 12px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
     cursor: pointer;
-    transition: 0.3s;
-    margin-bottom: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
 }
 
-.theme-button:hover {
-    background-color: var(--button-hover);
-    transform: scale(1.05);
+.lavender-haze { background-color: #4b0082; }
+.pink-blush { background-color: #a83279; }
+.sage-green { background-color: #155724; }
+
+#resetTasks {
+    padding: 10px 15px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
