@@ -70,13 +70,22 @@ body {
 .pink-blush { background-color: #a83279; }
 .sage-green { background-color: #155724; }
 
+/* Styling for reset button */
 #resetTasks {
-    padding: 10px 15px;
-    background-color: #555;
-    color: white;
     border: none;
+    color: white;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 20px;
+    
+}
+/* Styling for reset button according to the theme chosen */
+.lavender-theme #resetTasks{
+    background-color: #7e19c6;
+}
+.green-theme #resetTasks{
+    background-color: #31b550;
+}
+.pink-theme #resetTasks{
+    background-color: #ff7fcf;
 }
 
