@@ -7,20 +7,20 @@ body {
 
 /* Default Theme - Lavender Haze */
 .lavender-theme {
-    background-color: #e6e6fa;
-    color: #4b0082;
+    background-color: #b4b4f0;
+    color: #7e19c6;
 }
 
 /* Pink Blush Theme */
 .pink-theme {
-    background-color: #ffdde1;
-    color: #a83279;
+    background-color: #ffdff3;
+    color: #ff7fcf;
 }
 
 /* Sage Green Theme */
 .green-theme {
-    background-color: #d4edda;
-    color: #155724;
+    background-color: #b6fbc6;
+    color: #31b550;
 }
 
 /* Task Styling */
