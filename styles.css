@@ -37,7 +37,7 @@ body {
     align-items: center;
     gap: 10px;
     width: 60%;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.6);
 }
@@ -48,14 +48,13 @@ body {
     border: none;
     padding: 5px;
     resize: none;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 /* Buttons */
 .theme-container {
     margin-top: 10px;
 }
-
 .theme-button {
     padding: 5px 10px;
     border: none;
@@ -64,7 +63,6 @@ body {
     border-radius: 5px;
     color: white;
 }
-
 .lavender-haze { background-color: #4b0082; }
 .pink-blush { background-color: #a83279; }
 .sage-green { background-color: #155724; }
