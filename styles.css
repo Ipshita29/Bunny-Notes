@@ -52,11 +52,8 @@ body {
 }
 
 /* Buttons */
-.theme-container {
-    margin-top: 10px;
-}
 .theme-button {
-    padding: 5px 10px;
+    padding: 5px;
     border: none;
     cursor: pointer;
     font-size: 12px;
