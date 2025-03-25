@@ -51,7 +51,7 @@ body {
     font-size: 10px;
 }
 
-/* Buttons */
+/* Theme Switcher Buttons */
 .theme-button {
     padding: 5px;
     border: none;
@@ -60,34 +60,23 @@ body {
     border-radius: 5px;
     color: white;
 }
+
 .lavender-haze { background-color: #4b0082; }
 .pink-blush { background-color: #a83279; }
 .sage-green { background-color: #155724; }
 
-/* Styling for reset button */
+/* Styling for Reset Button */
 #resetTasks {
     border: none;
     color: white;
     cursor: pointer;
     border-radius: 5px;
 }
-/* Styling for reset button according to the theme chosen */
-.lavender-theme #resetTasks{
-    background-color: #7e19c6;
-}
-.green-theme #resetTasks{
-    background-color: #31b550;
-}
-.pink-theme #resetTasks{
-    background-color: #ff7fcf;
-}
-/* Styling for headline */
-h1{
-    font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
-    font-weight: 500;
-}
-h3{
-    font-style: italic;
-}
+
+.lavender-theme #resetTasks { background-color: #7e19c6; }
+.pink-theme #resetTasks { background-color: #ff7fcf; }
+.green-theme #resetTasks { background-color: #31b550; }
+
+/* Headline Styling */
+h1 { font-style: italic; font-family: 'Courier New', Courier, monospace; font-size: 50px; font-weight: 500; }
+h3 { font-style: italic; }
