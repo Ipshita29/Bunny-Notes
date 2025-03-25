@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Planner</title>
+    <title>Bunny Notes</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
-<body class="lavender-theme">  <!-- Default Theme -->
+<body>
 
-    <h1>Daily Planner</h1>
+    <h1>Bunny Notes</h1>
     <h3>Plan your day to make it worth it!</h3>
-    <h5>Choose A Theme and get started...</h5>
+    <h5>Choose a Theme and get started...</h5>
+
     <!-- Theme Switcher Buttons -->
     <div class="theme-container">
         <button class="theme-button lavender-haze" data-theme="lavender">Lavender Haze 💜</button>
@@ -19,8 +20,8 @@
         <button class="theme-button sage-green" data-theme="green">Sage Green 🍃</button>
     </div>
 
-    <!-- Task List -->
-    <div class="task-container">
+    <!-- Task List Container -->
+    <div id="tasksContainer" class="task-container">
         <div class="task">
             <input type="checkbox">
             <textarea placeholder="Write your task here..."></textarea>
@@ -40,9 +41,11 @@
         <div class="task">
             <input type="checkbox">
             <textarea placeholder="Write your task here..."></textarea>
-        </div>      
+        </div>
     </div>
+
     <button id="resetTasks">Reset Tasks</button>
     <p class="quote">“A goal without a plan is just a wish.” — Antoine de Saint-Exupéry</p>
+
 </body>
 </html>
