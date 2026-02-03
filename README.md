@@ -1,33 +1,58 @@
-# Bunny Notes
-🐰 Bunny Notes – A Daily Planner 🎀
-Welcome to Bunny Notes – a soft, cozy, and aesthetic planner to keep your days organized in the cutest way! 💖
+# 🐰 Bunny Notes — A Daily Planner 🎀
 
-🎀 Features
-✅ Add & check off tasks ✏️✔
-✅ Tasks are saved automatically in localStorage 📌
-✅ Pastel theme switcher (Pink, Lavender, Sage Green) 🎨
-✅ Daily Affirmation Quotes for soft girl vibes ✨
-✅ Minimalist & cute UI with soft rounded edges 🎀
+Welcome to **Bunny Notes** — a soft, cozy, and aesthetic daily planner to help you stay organized in the cutest way possible!  
+Designed with pastel vibes, rounded edges, and gentle animations to make productivity feel *peaceful* and *pretty*. 💖✨
 
-🎨 Theme Options
-💖 Blush Pink – Soft & dreamy ✨
-💜 Lavender Haze – Calming & elegant 🎀
-🌿 Sage Green – Cozy & earthy 🌿
+---
 
-🐰 Stay Organized with Bunny Notes! 🎀
-💖 Made with love by Ipshita Patel. 💖
+## 🎀 Features
 
-🎯 Tasks to be Made!
-🎨 1. Dark Mode Toggle.
-🕐 2. Timer/Pomodoro: A built-in focus timer.
-📝 3. Sticky Notes Section: Let users add quick notes.
+- ✏️ **Add & check off tasks**  
+- 📌 **Tasks auto-save** using localStorage  
+- 🎨 **Pastel theme switcher** (Pink, Lavender, Sage Green)  
+- ✨ **Daily Affirmation Quotes** for soft, positive vibes  
+- 💝 **Minimalist & cute UI** with smooth edges  
+- 🌸 Very beginner-friendly and clean HTML/CSS/JS structure  
 
-🚀 Installation & Usage
-1️⃣ Clone the repository
-            "git clone https://github.com/yourusername/bunny-notes.git"
-2️⃣ Open index.html in your browser and start planning!
+---
 
+## 🎨 Theme Options
 
-Want to contribute? Feel free to fork the repo and submit a PR! 🌸
+| Theme | Description |
+|-------|-------------|
+| 💖 **Blush Pink** | Soft, dreamy aesthetic ✨ |
+| 💜 **Lavender Haze** | Calm, elegant, feminine 🎀 |
+| 🌿 **Sage Green** | Cozy, serene, earthy vibes 🌿 |
 
+---
 
+## 🧸 Demo
+
+**Live Project:**  
+👉 https://glistening-khapse-bb292e.netlify.app/
+
+---
+
+## 🐰 Stay Organized with Bunny Notes 🎀  
+Made with love by **Ipshita Patel**. 💖✨
+
+---
+
+## 🎯 Upcoming Features (To-Do List)
+
+- 🌙 **Dark Mode Toggle**  
+- ⏱️ **Pomodoro Focus Timer**  
+- 📝 **Sticky Notes Section**  
+- 🌼 Custom cute icons & more themes  
+- 🎵 Soft ambient music toggle (optional future idea)
+
+---
+
+## 🤝 Contributing
+
+Want to contribute?  
+Feel free to **fork the repo**, improve features, and submit a **Pull Request**! 🌸
+
+---
+
+Thank you for using Bunny Notes — stay soft, stay productive! 🐰💗
