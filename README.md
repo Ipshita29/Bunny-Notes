@@ -38,16 +38,6 @@ Made with love by **Ipshita Patel**. 💖✨
 
 ---
 
-## 🎯 Upcoming Features (To-Do List)
-
-- 🌙 **Dark Mode Toggle**  
-- ⏱️ **Pomodoro Focus Timer**  
-- 📝 **Sticky Notes Section**  
-- 🌼 Custom cute icons & more themes  
-- 🎵 Soft ambient music toggle (optional future idea)
-
----
-
 ## 🤝 Contributing
 
 Want to contribute?  
